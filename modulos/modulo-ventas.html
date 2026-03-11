@@ -1,0 +1,45 @@
+<section class="modulo" id="modulo-ventas">
+
+  <h2>Ingrese los siquientes datos: </h2>
+
+  <div class="campo">
+    <label for="totalVendido">Total vendido</label>
+   <input id="totalVendido" type="text" placeholder="0" oninput="formatearNumero(this)"> 
+  </div>
+
+  <div class="campo">
+    <label for="gananciaBruta">Ganancia bruta</label>
+    <input id="gananciaBruta"
+type="text"
+placeholder="0"
+oninput="formatearNumero(this); calcularVentas()">
+  </div>
+
+  
+
+  
+
+  <div class="resultados">
+    <p>
+      Costo:
+      <strong id="costo">0.00</strong>
+    </p>
+
+    <p>
+      % utilidad sobre venta:
+      <strong id="utilidadVenta">0.00%</strong>
+    </p>
+
+   
+  </div>
+  <div class="acciones-centro">
+   <div class="acciones">
+
+<button class="btn-siguiente" onclick="siguiente('contenedor-cobros',2)">
+Siguiente →
+</button>
+
+</div>
+  </div>
+
+</section>

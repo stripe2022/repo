@@ -1,0 +1,52 @@
+<div class="modulo-salarios">
+
+  <h2>Salarios</h2>
+
+  <div class="campo">
+    <label>Nombre</label>
+    <input id="nombreTrabajadora" type="text" placeholder="Nombre de la trabajadora">
+  </div>
+
+  <div class="campo">
+    <label>Días trabajados</label>
+    <input id="diasTrabajados" type="number" placeholder="0">
+  </div>
+
+  <div class="campo">
+    <label>Salario por día</label>
+    <input id="salarioPorDia" type="number" placeholder="0">
+  </div>
+
+  <button onclick="agregarSalario()">
+    Agregar trabajadora
+  </button>
+ <div class="acciones">
+
+<button onclick="siguiente('contenedor-gastos')">
+← Atrás
+</button>
+
+<button onclick="siguiente('contenedor-divisas',5)">
+Siguiente →
+</button>
+
+</div>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Días</th>
+        <th>Salario día</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="tablaSalarios"></tbody>
+  </table>
+
+  <p>
+    Total salarios:
+    <strong id="totalSalarios">0.00</strong>
+  </p>
+
+</div>

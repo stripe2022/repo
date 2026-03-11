@@ -1,0 +1,65 @@
+<div class="modulo-cobros">
+
+  <h2>Medios de cobro</h2>
+
+  <div class="campo">
+<label>Cash</label>
+<input
+id="cash"
+type="text"
+placeholder="0"
+oninput="formatearNumero(this); calcularCobros()">
+</div>
+
+
+<div class="campo">
+<label>Tarjeta</label>
+<input
+id="tarjeta"
+type="text"
+placeholder="0"
+oninput="formatearNumero(this); calcularCobros()">
+</div>
+
+
+<div class="campo">
+<label>Cheques</label>
+<input
+id="cheques"
+type="text"
+placeholder="0"
+oninput="formatearNumero(this); calcularCobros()">
+</div>
+ 
+  <div class="acciones">
+
+<button onclick="siguiente('contenedor-ventas')">
+← Atrás
+</button>
+
+<button onclick="siguiente('contenedor-gastos',3)">
+Siguiente →
+</button>
+
+</div>
+
+  <hr>
+
+  <div class="resultados">
+    <p>
+      Total cobrado:
+      <strong id="totalCobrado">0.00</strong>
+    </p>
+
+    <p>
+      Diferencia vs Vendido:
+      <strong id="diferenciaCobro">0.00</strong>
+    </p>
+
+    <p>
+      Estado:
+      <strong id="estadoCobro">Pendiente</strong>
+    </p>
+  </div>
+
+</div>

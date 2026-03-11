@@ -1,0 +1,78 @@
+<div class="modulo-divisas">
+
+  <h2>Divisas</h2>
+
+  <div class="campo">
+    <label>Fecha</label>
+    <input id="fechaDivisa" type="date">
+  </div>
+
+  <div class="campo">
+    <label>USD</label>
+    <input id="usdDivisa" type="number" placeholder="0">
+  </div>
+
+  <div class="campo">
+    <label>Tasa</label>
+    <input id="tasaDivisa" type="number" placeholder="0">
+  </div>
+
+  <div class="campo">
+    <label>Método</label>
+    <select id="metodoDivisa">
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+    </select>
+  </div>
+
+  <button onclick="agregarDivisa()">
+    Agregar operación
+  </button>
+   
+  <hr>
+  <div class="acciones">
+
+<button onclick="siguiente('contenedor-salarios')">
+← Atrás
+</button>
+
+<button onclick="siguiente('contenedor-reporte-final',6)">
+Ver reporte →
+</button>
+
+</div>
+  </div>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>USD</th>
+        <th>Tasa</th>
+        <th>Subtotal</th>
+        <th>Método</th>
+      </tr>
+    </thead>
+    <tbody id="tablaDivisas"></tbody>
+  </table>
+
+  <p>
+    Total USD comprados:
+    <strong id="totalUsdComprados">0.00</strong>
+  </p>
+
+  <p>
+    Total CUP usados:
+    <strong id="totalCupUsados">0.00</strong>
+  </p>
+
+  <p>
+    Comprado con efectivo:
+    <strong id="totalDivisaEfectivo">0.00</strong>
+  </p>
+
+  <p>
+    Comprado con tarjeta:
+    <strong id="totalDivisaTarjeta">0.00</strong>
+  </p>
+
+</div>
